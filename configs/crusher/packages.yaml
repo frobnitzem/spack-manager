@@ -8,6 +8,15 @@ packages:
         modules:
           - cray-mpich/8.1.17
           - craype-network-ofi
+# python:
+#   require: "@3.9.12.1"
+#   buildable: false
+#   externals:
+##    - spec: "python@3.9.12.1%clang@14.0.0+bz2+crypt+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic patches=0d98e93,7d40923,f2fd060 arch=linux-sles15-zen3"
+#     - spec: "python@3.9.12.1%clang@14.0.0"
+#       prefix: /opt/cray/pe/python/3.9.12.1
+#       modules:
+#         - cray-python/3.9.12.1
   rocprim:
     require: "@5.2.0"
     buildable: false
@@ -50,6 +59,105 @@ packages:
     externals:
       - spec: hip@5.2.0
         prefix: /opt/rocm-5.2.0
+        modules:
+          - rocm/5.2.0
+          - craype-accel-amd-gfx90a
+  rocfft:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: rocfft@5.2.0
+        prefix: /opt/rocm-5.2.0/rocfft
+        modules:
+          - rocm/5.2.0
+          - craype-accel-amd-gfx90a
+  roctracer-dev:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: roctracer-dev@5.2.0
+        prefix: /opt/rocm-5.2.0/roctracer
+        modules:
+          - rocm/5.2.0
+          - craype-accel-amd-gfx90a
+  rocblas:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: rocblas@5.2.0
+        prefix: /opt/rocm-5.2.0/rocblas
+        modules:
+          - rocm/5.2.0
+          - craype-accel-amd-gfx90a
+  rocminfo:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: rocminfo@5.2.0
+        prefix: /opt/rocm-5.2.0/rocminfo
+        modules:
+          - rocm/5.2.0
+          - craype-accel-amd-gfx90a
+  hipblas:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: hipblas@5.2.0
+        prefix: /opt/rocm-5.2.0/hipblas
+        modules:
+          - rocm/5.2.0
+          - craype-accel-amd-gfx90a
+  hipcub:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: hipcub@5.2.0
+        prefix: /opt/rocm-5.2.0/hipcub
+        modules:
+          - rocm/5.2.0
+          - craype-accel-amd-gfx90a
+  hipfft:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: hipfft@5.2.0
+        prefix: /opt/rocm-5.2.0/hipfft
+        modules:
+          - rocm/5.2.0
+          - craype-accel-amd-gfx90a
+  hiprand:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: hiprand@5.2.0
+        prefix: /opt/rocm-5.2.0/hiprand
+        modules:
+          - rocm/5.2.0
+          - craype-accel-amd-gfx90a
+  hipsolver:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: hipsolver@5.2.0
+        prefix: /opt/rocm-5.2.0/hipsolver
+        modules:
+          - rocm/5.2.0
+          - craype-accel-amd-gfx90a
+  hipsparse:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: hipsparse@5.2.0
+        prefix: /opt/rocm-5.2.0/hipsparse
+        modules:
+          - rocm/5.2.0
+          - craype-accel-amd-gfx90a
+  miopen-hip:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: miopen-hip@5.2.0
+        prefix: /opt/rocm-5.2.0/miopen
         modules:
           - rocm/5.2.0
           - craype-accel-amd-gfx90a
