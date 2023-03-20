@@ -2,16 +2,15 @@ compilers:
   - compiler:
       spec: clang@14.0.0
       paths:
-        cc: cc
-        cxx: CC
-        f77: ftn
-        fc: ftn
+        cc: /opt/rocm-5.2.0/llvm/bin/amdclang
+        cxx: /opt/rocm-5.2.0/llvm/bin/amdclang++
+        f77: /opt/rocm-5.2.0/llvm/bin/amdflang
+        fc: /opt/rocm-5.2.0/llvm/bin/amdflang
       flags: {}
       operating_system: sles15
       target: any
       modules:
       - PrgEnv-amd/8.3.3
-      - rocm/5.2.0
       - amd/5.2.0
       - libfabric
       - craype-x86-trento
