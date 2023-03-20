@@ -44,6 +44,105 @@ packages:
         modules:
           - amd/5.4.0
           - craype-accel-amd-gfx90a
+  rocfft:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: rocfft@5.2.0
+        prefix: /opt/rocm-5.4.0/rocfft
+        modules:
+          - amd/5.4.0
+          - craype-accel-amd-gfx90a
+  roctracer-dev:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: roctracer-dev@5.2.0
+        prefix: /opt/rocm-5.4.0/roctracer
+        modules:
+          - amd/5.4.0
+          - craype-accel-amd-gfx90a
+  rocblas:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: rocblas@5.2.0
+        prefix: /opt/rocm-5.4.0/rocblas
+        modules:
+          - amd/5.4.0
+          - craype-accel-amd-gfx90a
+  rocminfo:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: rocminfo@5.2.0
+        prefix: /opt/rocm-5.4.0/rocminfo
+        modules:
+          - amd/5.4.0
+          - craype-accel-amd-gfx90a
+  hipblas:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: hipblas@5.2.0
+        prefix: /opt/rocm-5.4.0/hipblas
+        modules:
+          - amd/5.4.0
+          - craype-accel-amd-gfx90a
+  hipcub:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: hipcub@5.2.0
+        prefix: /opt/rocm-5.4.0/hipcub
+        modules:
+          - amd/5.4.0
+          - craype-accel-amd-gfx90a
+  hipfft:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: hipfft@5.2.0
+        prefix: /opt/rocm-5.4.0/hipfft
+        modules:
+          - amd/5.4.0
+          - craype-accel-amd-gfx90a
+  hiprand:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: hiprand@5.2.0
+        prefix: /opt/rocm-5.4.0/hiprand
+        modules:
+          - amd/5.4.0
+          - craype-accel-amd-gfx90a
+  hipsolver:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: hipsolver@5.2.0
+        prefix: /opt/rocm-5.4.0/hipsolver
+        modules:
+          - amd/5.4.0
+          - craype-accel-amd-gfx90a
+  hipsparse:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: hipsparse@5.2.0
+        prefix: /opt/rocm-5.4.0/hipsparse
+        modules:
+          - amd/5.4.0
+          - craype-accel-amd-gfx90a
+  miopen-hip:
+    require: "@5.2.0"
+    buildable: false
+    externals:
+      - spec: miopen-hip@5.2.0
+        prefix: /opt/rocm-5.4.0/miopen
+        modules:
+          - amd/5.4.0
+          - craype-accel-amd-gfx90a
   hip:
     require: "@5.4.0"
     buildable: false
