@@ -1,11 +1,15 @@
 compilers:
   - compiler:
-      spec: clang@15.0.0
+      spec: cce@15.0.0
       paths:
-        cc: cc
-        cxx: CC
-        f77: ftn
-        fc: ftn
+        cc: /opt/rocm-5.4.0/llvm/bin/amdclang
+        cxx: /opt/rocm-5.4.0/llvm/bin/amdclang++
+        f77: /opt/rocm-5.4.0/llvm/bin/amdflang
+        fc: /opt/rocm-5.4.0/llvm/bin/amdflang
+      # cc: cc
+      # cxx: CC
+      # f77: ftn
+      # fc: ftn
       flags: {}
       operating_system: sles15
       target: any

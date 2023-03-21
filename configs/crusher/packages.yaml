@@ -3,7 +3,7 @@ packages:
     require: "@8.1.17"
     buildable: false
     externals:
-      - spec: "cray-mpich@8.1.17%clang@15.0.0"
+      - spec: "cray-mpich@8.1.17%cce@15.0.0"
         prefix: /opt/cray/pe/mpich/8.1.17/ofi/amd/5.0
         modules:
           - cray-mpich/8.1.17
@@ -210,7 +210,7 @@ packages:
     require: "@3.4.2"
   all:
     compiler:
-      - clang@15.0.0
+      - cce@15.0.0
     providers:
       mpi: [cray-mpich@8.1.17]
       blas: [openblas]
